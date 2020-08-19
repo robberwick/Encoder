@@ -319,6 +319,25 @@
   #define CORE_INT12_PIN	12
   #define CORE_INT13_PIN	13
 
+#elif defined(ARDUINO_BLACKPILL_F411CE)
+  #define CORE_NUM_INTERRUPT	16
+  #define CORE_INT0_PIN		PB3
+  #define CORE_INT1_PIN		PB4
+  #define CORE_INT2_PIN		PB5
+  #define CORE_INT3_PIN		PB6
+  #define CORE_INT4_PIN		PC14
+  #define CORE_INT5_PIN		PB7
+  #define CORE_INT6_PIN		PB12
+  #define CORE_INT7_PIN		PB13
+  #define CORE_INT8_PIN		PB14
+  #define CORE_INT9_PIN		PB15
+  #define CORE_INT10_PIN	PA8
+  #define CORE_INT11_PIN	PA9
+  #define CORE_INT12_PIN	PA10
+  #define CORE_INT13_PIN	PA11
+  #define CORE_INT14_PIN	PA12
+  #define CORE_INT15_PIN	PA15
+
 #endif
 #endif
 
