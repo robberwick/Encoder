@@ -126,16 +126,16 @@
   #define CORE_NUM_INTERRUPT    2
   #define CORE_INT0_PIN		4
   #define CORE_INT1_PIN		5
- 
+
 // Attiny167 same core as abobe
 #elif defined(__AVR_ATtiny167__)
   #define CORE_NUM_INTERRUPT	2
   #define CORE_INT0_PIN		14
   #define CORE_INT1_PIN		3
 
-  
+
 // Arduino Due
-#elif defined(__SAM3X8E__) 
+#elif defined(__SAM3X8E__)
   #define CORE_NUM_INTERRUPT	54
   #define CORE_INT0_PIN		0
   #define CORE_INT1_PIN		1
@@ -201,7 +201,7 @@
   #define CORE_INT3_PIN		3
   #define CORE_INT4_PIN		4
   #define CORE_INT5_PIN		5
-  // GPIO6-GPIO11 are typically used to interface with the flash memory IC on 
+  // GPIO6-GPIO11 are typically used to interface with the flash memory IC on
   // most esp8266 modules, so we should avoid adding interrupts to these pins.
   #define CORE_INT12_PIN	12
   #define CORE_INT13_PIN	13
@@ -211,14 +211,14 @@
 // ESP32 (https://github.com/espressif/arduino-esp32)
 #elif defined(ESP32)
 
-  #define CORE_NUM_INTERRUPT  40 
+  #define CORE_NUM_INTERRUPT  40
   #define CORE_INT0_PIN		0
   #define CORE_INT1_PIN		1
   #define CORE_INT2_PIN		2
   #define CORE_INT3_PIN		3
   #define CORE_INT4_PIN		4
   #define CORE_INT5_PIN		5
-  // GPIO6-GPIO11 are typically used to interface with the flash memory IC on 
+  // GPIO6-GPIO11 are typically used to interface with the flash memory IC on
   // esp32, so we should avoid adding interrupts to these pins.
   #define CORE_INT12_PIN	12
   #define CORE_INT13_PIN	13
@@ -337,6 +337,44 @@
   #define CORE_INT13_PIN	PA11
   #define CORE_INT14_PIN	PA12
   #define CORE_INT15_PIN	PA15
+
+#elif defined(ARDUINO_BLUEPILL_F103C8)
+  #define CORE_NUM_INTERRUPT	35
+  #define CORE_INT0_PIN		PA0
+  #define CORE_INT1_PIN		PA1
+  #define CORE_INT2_PIN		PA2
+  #define CORE_INT3_PIN		PA3
+  #define CORE_INT4_PIN		PA4
+  #define CORE_INT5_PIN		PA5
+  #define CORE_INT6_PIN		PA6
+  #define CORE_INT7_PIN		PA7
+  #define CORE_INT8_PIN		PA8
+  #define CORE_INT9_PIN		PA9
+  #define CORE_INT10_PIN	PA10
+  #define CORE_INT11_PIN	PA11
+  #define CORE_INT12_PIN	PA12
+  #define CORE_INT13_PIN	PA13
+  #define CORE_INT14_PIN	PA14
+  #define CORE_INT15_PIN	PA15
+  #define CORE_INT16_PIN		PB0
+  #define CORE_INT17_PIN		PB1
+  #define CORE_INT18_PIN		PB2
+  #define CORE_INT19_PIN		PB3
+  #define CORE_INT20_PIN		PB4
+  #define CORE_INT21_PIN		PB5
+  #define CORE_INT22_PIN		PB6
+  #define CORE_INT23_PIN		PB7
+  #define CORE_INT24_PIN		PB8
+  #define CORE_INT25_PIN		PB9
+  #define CORE_INT26_PIN	PB10
+  #define CORE_INT27_PIN	PB11
+  #define CORE_INT28_PIN	PB12
+  #define CORE_INT29_PIN	PB13
+  #define CORE_INT30_PIN	PB14
+  #define CORE_INT31_PIN	PB15
+  #define CORE_INT33_PIN	PC13
+  #define CORE_INT34_PIN	PC14
+  #define CORE_INT35_PIN	PC15
 
 #endif
 #endif
